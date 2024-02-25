@@ -13,4 +13,4 @@ Route::post('/tareas', [TareaController::class, 'guardar']);
 
 Route::get('/tareas', [TareaController::class, 'obtenerTareas']);
 
-Route::delete('/tareas/{id}', [TareaController::class, 'eliminar']);
+Route::delete('/tareas/{tarea}', [TareaController::class, 'eliminar']);
