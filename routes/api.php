@@ -9,4 +9,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/tareas', [TareaController::class, 'guardar']);
+Route::get('/tareas', [TareaController::class, 'obtenerTareas']);
+Route::delete('/tareas/{tarea}', [TareaController::class, 'eliminar']);
 
